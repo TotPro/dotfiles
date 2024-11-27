@@ -4,4 +4,3 @@ set statusbar-home-tilde false
 set font "monospace normal 20"
 map + zoom in
 map - zoom out
-# set font "nconsolata 16"
