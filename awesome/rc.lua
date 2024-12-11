@@ -262,6 +262,13 @@ root.buttons(gears.table.join(
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
+	-- volume
+	awful.key({}, "XF86AudioRaiseVolume", function()
+		awful.spawn("pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%")
+	end, { description = "increase volume", group = "system" }),
+	awful.key({}, "XF86AudioLowerVolume", function()
+		awful.spawn("pactl set-sink-mute 0 false ; pactl -- set-sink-volume 0 -5%")
+	end, { description = "decrease volume", group = "system" }),
 	awful.key({ modkey }, "s", hotkeys_popup.show_help, { description = "show help", group = "awesome" }),
 	awful.key({ modkey }, "Left", awful.tag.viewprev, { description = "view previous", group = "tag" }),
 	awful.key({ modkey }, "Right", awful.tag.viewnext, { description = "view next", group = "tag" }),
