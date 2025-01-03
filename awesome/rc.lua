@@ -54,7 +54,8 @@ end
 -- Themes define colours, icons, font and wallpapers.
 -- /usr/share/awesome/themes
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
-beautiful.init("/home/soshi/dotfiles/awesome/default/theme.lua")
+local theme_path = string.format("%s/dotfiles/awesome/themes/%s/theme.lua", os.getenv("HOME"), "default")
+beautiful.init(theme_path)
 
 -- This is used later as the default terminal and editor to run.
 terminal = "wezterm"
