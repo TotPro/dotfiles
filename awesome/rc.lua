@@ -52,7 +52,9 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+-- /usr/share/awesome/themes
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init("/home/soshi/dotfiles/awesome/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "wezterm"
@@ -315,6 +317,9 @@ globalkeys = gears.table.join(
 	awful.key({ modkey }, "i", function()
 		awful.spawn("i3lock")
 	end, { description = "i3lock", group = "launcher" }),
+	awful.key({ modkey }, "v", function()
+		awful.spawn("pavucontrol")
+	end),
 	awful.key({ modkey, "Control" }, "r", awesome.restart, { description = "reload awesome", group = "awesome" }),
 	awful.key({ modkey, "Shift" }, "q", awesome.quit, { description = "quit awesome", group = "awesome" }),
 	awful.key({ modkey }, "l", function()
@@ -364,7 +369,7 @@ globalkeys = gears.table.join(
 		})
 	end, { description = "lua execute prompt", group = "awesome" }),
 	-- Menubar
-	awful.key({ modkey }, "p", function()
+	awful.key({ modkey }, "d", function()
 		menubar.show()
 	end, { description = "show the menubar", group = "launcher" })
 )
@@ -374,7 +379,10 @@ clientkeys = gears.table.join(
 		c.fullscreen = not c.fullscreen
 		c:raise()
 	end, { description = "toggle fullscreen", group = "client" }),
-	awful.key({ modkey, "Shift" }, "c", function(c)
+	-- awful.key({ modkey, "Shift" }, "c", function(c)
+	-- 	c:kill()
+	-- end, { description = "close", group = "client" }),
+	awful.key({ modkey }, "q", function(c)
 		c:kill()
 	end, { description = "close", group = "client" }),
 	awful.key(
