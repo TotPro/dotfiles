@@ -1,6 +1,0 @@
-set selection-clipboard clipboard
-set statusbar-page-percent true
-set statusbar-home-tilde false
-set font "monospace normal 16"
-map + zoom in
-map - zoom out
