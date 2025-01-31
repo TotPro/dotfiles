@@ -316,7 +316,7 @@ globalkeys = gears.table.join(
 		awful.spawn(browser)
 	end, { description = "open a browser", group = "launcher" }),
 	awful.key({ modkey }, "i", function()
-		awful.spawn("i3lock")
+		awful.spawn("i3lock -c 123456")
 	end, { description = "i3lock", group = "launcher" }),
 	awful.key({ modkey }, "v", function()
 		awful.spawn("pavucontrol")
