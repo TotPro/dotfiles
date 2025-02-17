@@ -38,6 +38,7 @@ lspconfig.lua_ls.setup({
           indent_size = "2",
         }
       },
-    }
+    },
   }
 })
+lspconfig.pyright.setup({})
