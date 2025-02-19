@@ -42,3 +42,13 @@ lspconfig.lua_ls.setup({
   }
 })
 lspconfig.pyright.setup({})
+lspconfig.clangd.setup({})
+-- lspconfig.rust_analyzer.setup({
+--   settings = {
+--     ['rust-analyzer'] = {
+--       diagnostics = {
+--         enable = false;
+--       }
+--     }
+--   }
+-- })
