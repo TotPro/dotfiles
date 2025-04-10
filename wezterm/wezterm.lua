@@ -21,6 +21,7 @@ config.key_tables = keybinds.key_tables
 config.color_scheme = "Aci (Gogh)"
 -- config.color_scheme = "aikofog (terminal.sexy)"
 -- config.color_scheme = "Andromeda"
+config.font_size = 16
 
 -- and finally, return the configuration to wezterm
 return config
