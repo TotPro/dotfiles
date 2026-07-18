@@ -1,12 +1,14 @@
 return {
   'romgrk/barbar.nvim',
+  event = 'VeryLazy',
   dependencies = {
-    -- 'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+    'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
     'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
   },
   init = function() vim.g.barbar_auto_setup = false end,
   opts = {
     -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
+    exclude_ft = { 'noice', 'lazy', 'mason', 'qf' },
     animation = true,
     -- insert_at_start = true,
     -- …etc.
@@ -24,5 +26,5 @@ return {
       Outline = { event = 'BufWinLeave', text = 'symbols-outline', align = 'right' },
     },
   },
-  version = '^1.0.0', -- optional: only update when a new 1.x version is released
+  -- version = '^1.0.0', -- optional: only update when a new 1.x version is released
 }
