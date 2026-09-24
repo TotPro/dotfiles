@@ -58,7 +58,7 @@ local theme_path = string.format("%s/dotfiles/awesome/themes/%s/theme.lua", os.g
 beautiful.init(theme_path)
 
 -- This is used later as the default terminal and editor to run.
-terminal = "wezterm"
+terminal = "ghostty"
 editor = os.getenv("EDITOR") or "neovim"
 editor_cmd = terminal .. " -e " .. editor
 browser = "google-chrome-stable"
