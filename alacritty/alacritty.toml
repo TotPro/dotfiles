@@ -1,0 +1,48 @@
+[general]
+working_directory = "workspace"
+live_config_reload = true
+
+[window]
+
+[scrolling]
+
+[font]
+size = 7.0
+offset = { x = 1, y = 1}
+
+[colors]
+
+[bell]
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+blink_interval = 1000
+blink_timeout = 0
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+  # {key = , mods = , mode = , action = }
+
+  # general
+  {key = "C", mods = "Control | Shift", action = "Copy"},
+  {key = "V", mods = "Control | Shift", action = "Paste"},
+  {key = "+", mods = "Control | Shift", action = "IncreaseFontSize"},
+  {key = "-", mods = "Control", action = "DecreaseFontSize"},
+  {key = "0", mods = "Control", action = "ResetFontSize"},
+  {key = "Escape", mode = "~Search", action = "ToggleViMode"},
+
+  # Vi mode
+  {key = "a", mode = "Vi | ~Search", action = "ToggleViMode"},
+  {key = "J", mods = "Shift", mode = "Vi | ~Search", action = "ScrollPageDown"},
+  {key = "K", mods = "Shift", mode = "Vi | ~Search", action = "ScrollPageUp"},
+
+  # Search mode
+  {key = "n", mode = "Search | ~Vi", action = "SearchFocusNext"},
+  {key = "n", mods = "Shift", mode = "Search | ~Vi", action = "SearchFocusPrevious"},
+]
