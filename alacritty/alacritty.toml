@@ -35,10 +35,11 @@ bindings = [
   {key = "+", mods = "Control | Shift", action = "IncreaseFontSize"},
   {key = "-", mods = "Control", action = "DecreaseFontSize"},
   {key = "0", mods = "Control", action = "ResetFontSize"},
-  {key = "Escape", mode = "~Search", action = "ToggleViMode"},
+  {key = "Escape", mods = "Control", mode = "~Search", action = "ToggleViMode"},
 
   # Vi mode
   {key = "a", mode = "Vi | ~Search", action = "ToggleViMode"},
+  {key = "Space", mods = "Control | Shift", mode = "~Search", action = "None"},
   {key = "J", mods = "Shift", mode = "Vi | ~Search", action = "ScrollPageDown"},
   {key = "K", mods = "Shift", mode = "Vi | ~Search", action = "ScrollPageUp"},
 
