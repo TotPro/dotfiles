@@ -2,5 +2,6 @@ set selection-clipboard clipboard
 set statusbar-page-percent true
 set statusbar-home-tilde false
 set font "monospace normal 12"
+set show-recent 0
 map + zoom in
 map - zoom out
