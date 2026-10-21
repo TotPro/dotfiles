@@ -2,17 +2,12 @@
 working_directory = "workspace"
 live_config_reload = true
 
-[window]
-
-[scrolling]
+[env]
+WINIT_X11_SCALE_FACTOR = "2.0"
 
 [font]
 size = 7.0
 offset = { x = 1, y = 1}
-
-[colors]
-
-[bell]
 
 [selection]
 save_to_clipboard = true
