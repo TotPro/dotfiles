@@ -12,10 +12,11 @@
   "nui.nvim": { "branch": "main", "commit": "10fc361835c856ba4233ef5ea135b919bf3dce97" },
   "nvim-cmp": { "branch": "main", "commit": "2ffe79f1f021def8dd1fcd81deb16f1bb0d989f3" },
   "nvim-notify": { "branch": "master", "commit": "8701bece920b38ea289b457f902e2ad184131a5d" },
-  "nvim-tree.lua": { "branch": "master", "commit": "0142ac30ba84fa6ebf7818b097b2addffed78668" },
+  "nvim-tree.lua": { "branch": "master", "commit": "9a2e0006d42f292eb3ade7dfdff201a7429a780c" },
   "nvim-web-devicons": { "branch": "master", "commit": "ec309a0eaff6ea967e58c275996155ab5c16938d" },
   "obsidian.nvim": { "branch": "main", "commit": "a562bedd7b418a289b005cb4c62b1fe79066253b" },
   "snacks.nvim": { "branch": "main", "commit": "882c996cf28183f4d63640de0b4c02ec886d01f2" },
   "tree-sitter-manager.nvim": { "branch": "main", "commit": "e99a8d5abf935cc193cc71600a2ad6a5b61b1aa0" },
-  "vim-vsnip": { "branch": "master", "commit": "9bcfabea653abdcdac584283b5097c3f8760abaa" }
+  "vim-vsnip": { "branch": "master", "commit": "9bcfabea653abdcdac584283b5097c3f8760abaa" },
+  "vimtex": { "branch": "master", "commit": "02eee260766d031185449c9600f03b933fa0357c" }
 }
