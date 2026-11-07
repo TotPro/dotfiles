@@ -13,6 +13,7 @@ return {
     workspaces = {
       {
         path = "~/workspace/obsidian/vault/",
+        path = "~/work/obsidian/vault/",
       },
     },
     templates = {
